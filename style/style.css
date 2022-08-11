@@ -1,0 +1,1318 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 868px) and (max-width: 1440px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .header {
+        height: 100px;
+        width: 100%;
+        background-color: #93e1a2;
+    }
+
+    header a img {
+        position: absolute;
+        left: 10px;
+        background-image: url(../imagenes/logo.jpg);
+        height: 100px;
+        width: 100px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 120px;
+        color: #7B8352;
+        text-shadow: 1px 1px 1px black;
+        font-size: 30px;
+    }
+
+    .barra {
+        float: right;
+    }
+
+    .barra li {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        top: 65px;
+        right: 10px;
+        margin: 8px;
+        font-size: 20px;
+    }
+
+
+    .barra li:hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: #7B8352;
+    }
+
+    .boton{
+        color: black;
+        font-size: 30px;
+        padding: 0 20px;
+        border: none;
+        background-color: #93e1a2;
+        display: none;
+    }
+
+
+    .barra a:hover {
+        color: white;
+    }
+
+    main {
+        /* 
+    height: 100vh; */
+        width: 100%;
+    }
+
+    .imgind {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main.img1 {
+        background: url(../imagenes/img_4.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img2 {
+        background: url(../imagenes/img_2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img3 {
+        background: url(../imagenes/img_5.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img4 {
+        background: url(../imagenes/img_0.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.imgind {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    main.sobre {
+        background-image: url(../imagenes/coffee-g76f1ca244_1920.jpg);
+        background-size: cover;
+        padding: 10px;
+        color: white;
+        background-color: white;
+    }
+
+    main.contacto {
+        background-image: url(../imagenes/cafe_contacto.jpg);
+        background-size: cover;
+        background-color: grey;
+        height: 100vh;
+    }
+
+    .mainsuc {
+        background-image: url(../imagenes/coffee-g76f1ca244_1920.jpg);
+        background-size: cover;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        height: 80vh;
+    }
+
+    main.contacto>h1 {
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .formulario {
+        font-size: 20px;
+        text-decoration: underline;
+        position: absolute;
+        top: 200px;
+        left: 508px;
+        line-height: 50px;
+        border: 4px solid #93e1a2;
+        padding: 5px;
+    }
+
+    /* .subir {
+    height: 40px;
+    width: 40px;
+    background-color: #93E1A2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 50%;
+    border: 2px solid black;
+} */
+
+    .sobre p {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0px;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+        line-height: 40px;
+        padding: 0px;
+    }
+
+    .cafe {
+        grid-area: cafe;
+        /* 
+    place-self: center; */
+
+    }
+
+    .frio {
+        grid-area: frio;
+        /* 
+    place-self: center; */
+    }
+
+    .extras {
+        grid-area: extras;
+        /* 
+    place-self: center; */
+    }
+
+    .te {
+        grid-area: te;
+        /* 
+    place-self: center; */
+    }
+
+    .tienda {
+        grid-area: tienda;
+        /* 
+    place-self: center; */
+    }
+
+    .porcion {
+        grid-area: porcion;
+        /* 
+    place-self: center; */
+    }
+
+    .panaderia {
+        grid-area: panaderia;
+        /* 
+    place-self: center; */
+    }
+
+    .pasteleria {
+        grid-area: pasteleria;
+        /* 
+    place-self: center; */
+    }
+
+
+    .cuadrados {
+        grid-area: cuadrados;
+        /* 
+    place-self: center; */
+    }
+
+    .merienda {
+        grid-area: merienda;
+        /* 
+    place-self: center; */
+    }
+
+    .combos {
+        grid-area: combos;
+        /* 
+    place-self: center; */
+    }
+
+    .combosDia {
+        grid-area: combosDia;
+        /* 
+    place-self: center; */
+    }
+
+    .nuestro h3 {
+        text-align: center;
+    }
+
+
+
+    .nuestro {
+        color: black;
+        padding: 30px;
+    }
+
+
+    .ricas {
+        color: lightgray;
+        background-color: #93e1a2;
+        background-image: linear-gradient(#93e1a2, #292c21 90%);
+        /*     border: 2px dotted black; */
+        text-align: center;
+    }
+
+    main.nuestro {
+        background-image: url(../imagenes/menu_cafe.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 225px 225px 325px 200px;
+        grid-template-areas:
+            "cafe frio extras"
+            "te te tienda"
+            "porcion panaderia pasteleria"
+            "cuadrados merienda combos"
+            "combosDia combosDia combosDia";
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
+
+
+    .apto {
+        height: 20px;
+        width: 20px;
+        display: flex;
+    }
+
+    .aptoVegano {
+        display: flex;
+        border: 2px dashed #93E1A2;
+        height: 30px;
+        width: 250px;
+        font-size: 20px;
+        justify-content: start;
+
+    }
+
+    #sucursales {
+        text-align: center;
+    }
+
+    .sucursales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .sucursales.palermo {
+        display: block;
+    }
+
+
+    .sucursales.urquiza {
+        display: block;
+    }
+
+    .sucursales.belgrano {
+        display: block;
+    }
+
+    footer {
+        height: 65px;
+        width: 100%;
+        background-color: #93E1A2;
+        color: #7B8352;
+        margin: 0px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "trabaja copy redes";
+        align-content: space-around;
+
+
+    }
+
+    /* 
+footer.unico{
+    position: absolute;
+    top: 790px;
+} */
+
+    .trabaja {
+        padding: 2px;
+        display: inline-block;
+        margin: 2px;
+        grid-area: trabaja;
+    }
+
+    .redes {
+        top: 760px;
+        right: 3px;
+        padding: 2px;
+        margin: 2px;
+        float: right;
+        grid-area: redes;
+        text-align: right;
+    }
+
+    .redes_logos {
+        position: relative;
+        right: 25px;
+    }
+
+    .redes_logos :hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+
+    .copy {
+        grid-area: copy;
+        place-self: center;
+    }
+}
+
+/* 
+***A partir de acá va resolución tablet
+***A partir de acá va resolución tablet
+***A partir de acá va resolución tablet
+***A partir de acá va resolución tablet
+***A partir de acá va resolución tablet
+***A partir de acá va resolución tablet */
+
+@media only screen and (min-width: 501px) and (max-width: 867px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+
+    .header {
+        height: 100px;
+        width: 100%;
+        background-color: #93e1a2;
+    }
+
+    header a img {
+        position: absolute;
+        left: 10px;
+        background-image: url(../imagenes/logo.jpg);
+        height: 100px;
+        width: 100px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 120px;
+        color: #7B8352;
+        text-shadow: 1px 1px 1px black;
+        font-size: 18px;
+    }
+
+    .barra {
+        float: right;
+    }
+
+    .me {
+        color: white;
+    }
+
+    .barra li {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        top: 75px;
+        right: 10px;
+        margin: 6px;
+        font-size: 12px;
+    }
+
+
+    .barra li:hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: #7B8352;
+    }
+    .boton{
+        color: black;
+        font-size: 30px;
+        padding: 0 20px;
+        border: none;
+        background-color: #93e1a2;
+        display: none;
+    }
+
+    .barra a:hover {
+        color: white;
+    }
+
+    main {
+        /* 
+    height: 100vh; */
+        width: 100%;
+    }
+
+    .imgind {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main.img1 {
+        background: url(../imagenes/img_4.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img2 {
+        background: url(../imagenes/img_2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img3 {
+        background: url(../imagenes/img_5.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img4 {
+        background: url(../imagenes/img_0.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.imgind {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    main.sobre {
+        background-image: url(../imagenes/coffee-g76f1ca244_1920.jpg);
+        background-size: cover;
+        padding: 10px;
+        color: white;
+        background-color: white;
+    }
+
+    main.contacto {
+        background-image: url(../imagenes/cafe_contacto.jpg);
+        background-size: cover;
+        background-color: grey;
+        height: 100vh;
+    }
+
+    .mainsuc {
+        background-image: url(../imagenes/coffee-g76f1ca244_1920.jpg);
+        background-size: cover;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    main.contacto>h1 {
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .formulario {
+        font-size: 20px;
+        text-decoration: underline;
+        position: absolute;
+        align-content: center;
+        bottom: 100px;
+        line-height: 50px;/* 
+        border: 4px solid #93e1a2; */
+        padding: 5px;
+    }
+
+    /* .subir {
+    height: 40px;
+    width: 40px;
+    background-color: #93E1A2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 50%;
+    border: 2px solid black;
+} */
+
+    .sobre p {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0px;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+        line-height: 40px;
+        padding: 0px;
+    }
+
+    .cafe {
+        grid-area: cafe;
+        /* 
+    place-self: center; */
+
+    }
+
+    .frio {
+        grid-area: frio;
+        /* 
+    place-self: center; */
+
+    }
+
+    .extras {
+        grid-area: extras;
+        /* 
+    place-self: center; */
+
+    }
+
+    .te {
+        grid-area: te;
+        /* 
+    place-self: center; */
+
+    }
+
+    .tienda {
+        grid-area: tienda;
+        /* 
+    place-self: center; */
+
+    }
+
+    .porcion {
+        grid-area: porcion;
+        /* 
+    place-self: center; */
+
+    }
+
+    .panaderia {
+        grid-area: panaderia;
+        /* 
+    place-self: center; */
+
+    }
+
+    .pasteleria {
+        grid-area: pasteleria;
+        /* 
+    place-self: center; */
+
+    }
+
+
+    .cuadrados {
+        grid-area: cuadrados;
+        /* 
+    place-self: center; */
+
+    }
+
+    .merienda {
+        grid-area: merienda;
+        /* 
+    place-self: center; */
+
+    }
+
+    .combos {
+        grid-area: combos;
+        /* 
+    place-self: center; */
+
+    }
+
+    .combosDia {
+        grid-area: combosDia;
+        /* 
+    place-self: center; */
+    }
+
+    .nuestro h3 {
+        text-align: center;
+    }
+
+
+
+    .nuestro {
+        color: black;
+        /* 
+    padding: 30px; */
+        padding: 5px;
+    }
+
+
+    .nuestro h1 {
+        position: absolute;
+        justify-self: center;
+        margin: 0px;
+    }
+
+    main.nuestro {
+        background-image: url(../imagenes/menu_cafe.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 230px 170px 230px 300px 300px 170px;
+        grid-template-areas:
+            "cafe frio"
+            "extras tienda"
+            "te te"
+            "porcion panaderia"
+            "cuadrados pasteleria"
+            "merienda combos"
+            /* 
+        "combosDia combosDia combosDia"; */
+    }
+
+    .ricas {
+        color: lightgray;
+        background-color: #93e1a2;
+        background-image: linear-gradient(#93e1a2, #292c21 90%);
+        /*     border: 2px dotted black; */
+        text-align: center;
+    }
+
+    .apto {
+        height: 20px;
+        width: 20px;
+        display: flex;
+    }
+
+    .aptoVegano {
+        display: flex;
+    }
+
+    #sucursales {
+        text-align: center;
+    }
+
+    .sucursales {
+    padding: 10px;
+    }
+
+    .sucursales.palermo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text1 mapa1";
+    }
+
+    .text1{
+        grid-area: text1;
+    }
+    .mapa1{
+        grid-area: mapa1;
+    }
+    .sucursales.sucursales.urquiza{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text2 mapa2";
+    }
+
+    .text2{
+        grid-area: text2;
+    }
+    .mapa2{
+        grid-area: mapa2;
+    }
+    .sucursales.sucursales.belgrano{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text3 mapa3";
+    }
+
+    .text3{
+        grid-area: text3;
+    }
+    .mapa3{
+        grid-area: mapa3;
+    }
+
+
+    footer {
+        height: 65px;
+        width: 100%;
+        background-color: #93E1A2;
+        color: #7B8352;
+        margin: 0px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "trabaja copy redes";
+        align-content: space-around;
+        font-size: 13px;
+    }
+
+    /* 
+footer.unico{
+    position: absolute;
+    top: 790px;
+} */
+
+    .trabaja {
+        padding: 2px;
+        display: inline-block;
+        margin: 2px;
+        grid-area: trabaja;
+
+    }
+
+    .redes {
+        top: 760px;
+        right: 3px;
+        padding: 2px;
+        margin: 2px;
+        float: right;
+        grid-area: redes;
+        text-align: right;
+    }
+
+    .redes_logos {
+        position: relative;
+        right: 13px;
+    }
+
+    .redes_logos :hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+
+    .copy {
+        grid-area: copy;
+        place-self: center;
+    }
+}
+
+
+
+/* A partir de acá va la resolución mobile */
+/* A partir de acá va la resolución mobile */
+/* A partir de acá va la resolución mobile */
+/* A partir de acá va la resolución mobile */
+/* A partir de acá va la resolución mobile */
+/* A partir de acá va la resolución mobile */
+/* A partir de acá va la resolución mobile */
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .header {
+        height: 75px;
+        width: 100%;
+        background-color: #93e1a2;
+    }
+
+    header a img {
+        position: absolute;
+        background-image: url(../imagenes/logo.jpg);
+        left: 1px;
+        height: 75px;
+        width: 75px;
+    }
+    .boton{
+        color: black;
+        font-size: 30px;
+        padding: 0 20px;
+        border: none;
+        background-color: #93e1a2;
+        
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 80px;
+        color: #7B8352;
+        text-shadow: 1px 1px 1px black;
+        font-size: 13px;
+    }
+    
+.barra-botones{/* 
+    display: flex; */
+    
+}
+
+    .barra {
+        float: right;
+    }
+
+    .me {
+        color: white;
+    }
+
+    .barra li {
+        display: block;
+        list-style: none;
+        position: relative;
+        top: 55px;
+        right: 5px;
+        margin: 3px;
+        font-size: 10px;
+    }
+
+
+    .barra li:hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+
+    .barra a {
+        text-decoration: none;
+        color: #7B8352;
+    }
+
+    .barra a:hover {
+        color: white;
+    }
+
+    main {
+        /* 
+    height: 100vh; */
+        width: 100%;
+    }
+
+    .imgind {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main.img1 {
+        background: url(../imagenes/img_4.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img2 {
+        background: url(../imagenes/img_2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img3 {
+        background: url(../imagenes/img_5.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main.img4 {
+        background: url(../imagenes/img_0.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.imgind {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    main.sobre {
+        background-image: url(../imagenes/coffee-g76f1ca244_1920.jpg);
+        background-size: cover;
+        padding: 10px;
+        color: white;
+        background-color: white;
+    }
+
+    main.contacto {
+        background-image: url(../imagenes/cafe_contacto.jpg);
+        background-size: cover;
+        background-color: grey;
+        height: 100vh;
+    }
+
+    .mainsuc {
+        background-image: url(../imagenes/coffee-g76f1ca244_1920.jpg);
+        background-size: cover;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    main.contacto>h1 {
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .formulario {
+        font-size: 20px;
+        text-decoration: underline;
+        position: absolute;
+        align-content: center;
+        bottom: 100px;
+        line-height: 50px;/* 
+        border: 4px solid #93e1a2; */
+        padding: 5px;
+    }
+
+    /* .subir {
+    height: 40px;
+    width: 40px;
+    background-color: #93E1A2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 50%;
+    border: 2px solid black;
+} */
+
+    .sobre p {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0px;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+        line-height: 40px;
+        padding: 0px;
+    }
+
+    .cafe {
+        grid-area: cafe;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+    .frio {
+        grid-area: frio;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+    .extras {
+        grid-area: extras;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+    .te {
+        grid-area: te;
+        margin: 20px;
+        
+        /* 
+    place-self: center; */
+
+    }
+
+    .tienda {
+        grid-area: tienda;
+        margin: 20px;
+        
+        /* 
+    place-self: center; */
+
+    }
+
+    .porcion {
+        grid-area: porcion;
+        margin: 20px;
+        
+        /* 
+    place-self: center; */
+
+    }
+
+    .panaderia {
+        grid-area: panaderia;
+        margin: 20px;
+        
+        /* 
+    place-self: center; */
+
+    }
+
+    .pasteleria {
+        grid-area: pasteleria;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+
+    .cuadrados {
+        grid-area: cuadrados;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+    .merienda {
+        grid-area: merienda;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+    .combos {
+        grid-area: combos;
+        margin: 20px;
+        /* 
+    place-self: center; */
+
+    }
+
+    .combosDia {
+        grid-area: combosDia;
+        /* 
+    place-self: center; */
+    }
+
+    .nuestro h3 {
+        text-align: center;
+    }
+
+
+
+    .nuestro {
+        color: black;
+        padding: 5px;
+    }
+
+
+    .nuestro h1 {
+        position: absolute;
+        justify-self: center;
+        margin: 0px;
+    }
+
+    main.nuestro {
+        background-image: url(../imagenes/menu_cafe.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 230px 170px 285px 385px 350px 250px;
+        grid-template-areas:
+            "cafe frio"
+            "extras tienda"
+            "te te"
+            "porcion panaderia"
+            "cuadrados pasteleria"
+            "merienda combos"
+            /* 
+        "combosDia combosDia combosDia"; */
+    }
+
+    .ricas {
+        color: lightgray;
+        background-color: #93e1a2;
+        background-image: linear-gradient(#93e1a2, #292c21 90%);
+        /*     border: 2px dotted black; */
+        text-align: center;
+    }
+
+    .apto {
+        height: 20px;
+        width: 20px;
+        display: flex;
+    }
+
+    .aptoVegano {
+        display: flex;
+    }
+
+    #sucursales {
+        text-align: center;
+    }
+
+    .sucursales {
+    padding: 10px;
+    }
+
+    .sucursales.palermo{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text1" "mapa1";
+    }
+
+    .text1{
+        grid-area: text1;
+    }
+    .mapa1{
+        grid-area: mapa1;
+    }
+    .sucursales.sucursales.urquiza{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text2" "mapa2";
+    }
+
+    .text2{
+        grid-area: text2;
+    }
+    .mapa2{
+        grid-area: mapa2;
+    }
+    .sucursales.sucursales.belgrano{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text3" "mapa3";
+    }
+
+    .text3{
+        grid-area: text3;
+    }
+    .mapa3{
+        grid-area: mapa3;
+    }
+
+
+    footer {
+        height: 65px;
+        width: 100%;
+        background-color: #93E1A2;
+        color: #7B8352;
+        margin: 0px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "trabaja copy redes";
+        align-content: space-around;
+        font-size: 12px;
+    }
+
+    /* 
+footer.unico{
+    position: absolute;
+    top: 790px;
+} */
+
+    .trabaja {
+        padding: 2px;
+        display: inline-block;
+        margin: 2px;
+        grid-area: trabaja;
+    }
+
+    .redes {
+        top: 760px;
+        right: 3px;
+        padding: 2px;
+        margin: 2px;
+        float: right;
+        grid-area: redes;
+        text-align: right;
+    }
+
+    .redes_logos {
+        position: relative;
+        right: 10px;
+    }
+
+    .redes_logos :hover {
+        transform: scale(1.25);
+        transition: all 0.3s;
+    }
+
+    .copy {
+        grid-area: copy;
+        place-self: center;
+    }
+
+}  
